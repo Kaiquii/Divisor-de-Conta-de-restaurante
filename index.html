@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="/style.css">
+  
+  <title>Divisor de Conta</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Divisor de Conta</h1>
+    <form id="calculatorForm">
+
+      <div id="customers">
+        <div class="form-group">
+          <label for="customerName">Nome do Cliente:</label>
+          <input type="text" class="form-control customer-name" placeholder="Nome do Cliente">
+        </div>
+      </div>
+
+      <div id="products">
+        <div class="form-group">
+          <label for="productName">Nome do Produto:</label>
+          <input type="text" class="form-control product-name" placeholder="Nome do Produto">
+        </div>
+        <div class="form-group">
+          <label for="productPrice">Preço do Produto:</label>
+          <input type="number" class="form-control product-price" placeholder="Preço do Produto">
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="addProduct()">Adicionar Produto</button>
+      </div>
+
+      <button type="submit" class="btn btn-success">Calcular</button>
+
+    </form>
+
+    <div id="result"></div>
+    
+  </div>
+
+  <!-- JS Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+  <!-- JS personalizado -->
+  <script src="/script.js"></script>
+</body>
+</html>
